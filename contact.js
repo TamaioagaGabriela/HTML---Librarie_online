@@ -1,0 +1,2 @@
+document.getElementById('song').innerHTML = '<audio id="audio-player" controls="controls" src="audio/FROZEN.mp3" type="audio/mpeg">';
+document.getElementById('video').innerHTML = '<video id="audio-player" width="320" height="176" controls="controls" src="audio/FROZEN.mp4" type="video/mpeg">';

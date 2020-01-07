@@ -1,0 +1,90 @@
+ @media screen and (max-width: 600px) {
+     .column {
+         width: 100%;
+    }
+     .books {
+         grid-template-columns:1fr 1fr!important;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr!important;
+    }
+     .navigation {
+         flex-flow: column wrap;
+         padding: 0;
+    }
+     .container {
+         flex-flow: column wrap;
+         padding: 0;
+    }
+     .mini-meniu {
+         flex-flow: column wrap;
+         padding: 10px;
+    }
+     .navigation a {
+         text-align: center;
+         padding: 10px;
+         border-top: 1px solid rgba(255,255,255,0.3);
+         border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+     .navigation li:last-of-type a {
+         border-bottom: none;
+    }
+}
+ @media (max-width:801px) and (min-width:601px) {
+     .books {
+         grid-template-columns:1fr 1fr 1fr!important;
+         grid-template-rows: 1fr 1fr 1fr!important;
+    }
+}
+ @media all and (max-width: 800px) {
+     .navigation {
+         justify-content: space-around;
+    }
+     .container {
+         justify-content: space-around;
+         max-width:50%;
+    }
+     .text {
+         font-size:8px;
+    }
+     .mini-meniu {
+         justify-content: space-around;
+         display: block;
+    }
+}
+ @media (max-width:801px){
+     .mini-meniu {
+         grid-template-columns:1fr !important;
+         grid-template-rows: 1fr 1fr 1fr!important;
+    }
+     .text {
+         font-size:12px!important;
+    }
+     #citat {
+         font-size:7px!important;
+    }
+}
+ @media (max-width:801px) and (min-width:601px) {
+     .books {
+         grid-template-columns:1fr 1fr 1fr!important;
+         grid-template-rows: 1fr 1fr 1fr!important;
+    }
+}
+ @media screen and (max-width: 1050px) {
+     .navigation {
+         justify-content: space-around;
+    }
+     .container {
+         justify-content: space-around;
+    }
+     .main td{
+        display:block;
+    }
+     .navigation a {
+         text-align: center;
+         padding: 10px;
+         border-top: 1px solid rgba(255,255,255,0.3);
+         border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+     .navigation li:last-of-type a {
+         border-bottom: none;
+    }
+}

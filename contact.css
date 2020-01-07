@@ -1,0 +1,57 @@
+ h1 {
+     font-family: august;
+     color: #622569;
+}
+ body{
+     background-color:#b0aac0;
+     margin: 0px;
+     font-family: "comic sans ms";
+     font-size: 16px;
+     text-align: center;
+}
+ h1 {
+     color: #622569;
+     text-align: center;
+}
+ .containerContact {
+     margin-left: 15%;
+     margin-right: 15%;
+     width: auto;
+     text-align: left;
+}
+ .p1 {
+     margin-left: 10%;
+     color: #622569;
+     text-align: left;
+     font-size: 18px;
+}
+ .main{
+     color: #622569;
+     vertical-align: bottom;
+     height: 100px;
+     margin-left: 10%;
+     width: 80%;
+     margin-right: 10%;
+     border-style: double;
+     border-collapse: separate;
+     border-spacing: 1em 1em;
+     border-color: white;
+     display:table;
+}
+ .main tbody {
+     display: table-row-group;
+     vertical-align: middle;
+     border-color: inherit;
+}
+ .imp {
+     text-align: center;
+}
+ .mail {
+     margin-left:10%;
+     color: #c94c4c;
+}
+ .sound {
+     width:100%;
+     max-width: 600px;
+}
+ 

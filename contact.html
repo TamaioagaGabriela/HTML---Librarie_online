@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarie</title>
+    <link rel="shortcut icon" type="image/jpg" href="poze/book.jpg" />
+    <link type="text/CSS" rel="stylesheet" href="contact.css" />
+    <link type="text/CSS" rel="stylesheet" href="media_query.css" />
+    <link type="text/CSS" rel="stylesheet" href="general.css" />
+	<link type="text/CSS" rel="stylesheet" href="login.css" />
+
+</head>
+
+<body onload="fonload()">
+
+    <ul class="navigation">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="bestseller.html">Bestseller</a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Categorii</button>
+                <div class="dropdown-content">
+                    <a href="libromani.html">Coltul Libromanilor </a>
+                    <a href="bestseller.html">Bestseller</a>
+                    <a href="carti_engleza.html">Carti in engleza</a>
+
+                </div>
+            </div>
+        </li>
+        <li><a href="despre_noi.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li> 
+		<li><a href="#" onclick="document.getElementById('id03').style.display='block'">Setari</a></li> 
+    </ul>
+
+    <hr/>
+    <h1>Contact:</h1>
+    <hr/>
+
+    <div class="containerContact">
+
+        <br/>
+        <br/>
+
+        <table class="main">
+            <tbody>
+
+                <tr>
+                    <td>
+                        <p><b><span style="color:#c94c4c">One Distribution Company S.R.L.</span></b></p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <ol>
+                            <li>
+                                <p>CUI: RO 24235942</p>
+                            </li>
+                            <li>
+                                <p>Nr. Înreg. Reg. Comertului: J40/ 12838/ 2008</p>
+                            </li>
+                            <li>
+                                <p>Capital social: 1998000 RON</p>
+                            </li>
+                            <li>
+                                <p>Înregistrat la Registrul de evidenţă a prelucrărilor de date cu caracter personal cu numărul 18614/10.02.2011</p>
+                            </li>
+                            <li>
+                                <p>Numele "Cartepedia" este marcă înregistrată la OSIM. </p>
+                            </li>
+                        </ol>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br/>
+        <br/>
+        <table class="main">
+            <tbody>
+                <tr>
+                    <td>
+                        <p><b><span style="color:#c94c4c">Program relații cu clienții:</span></b></p>
+                    </td>
+                    <td>
+                        <p>Luni – Vineri : 09.00 – 17.30</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b><span style="color:#c94c4c">Telefon:</span></b></p>
+                    </td>
+                    <td>
+                        <p>0740.317.617</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b><span style="color:#c94c4c">E-mail:</span></b></p>
+                    </td>
+                    <td>
+                        <p>carte@cartepedia.ro</p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br/>
+        <br/>
+
+        <p class="p1"> Daca vrei sa primesti notificari cu ofertele noastre, scrie mail-ul tau aici:</p>
+
+        <div class="mail">
+            Name: &ensp;
+            <input type="text" name="nume" value="">
+            <br> Email:&emsp;
+            <input type="text" name="email" value="">
+            <br>
+            <input type="button" id="myBtn" onclick="myFunction()" value="Submit" style="color:purple">
+            <p id="buton"></p>
+
+            <script>
+                function myFunction() {
+                    var x = "Submitted!";
+                    document.getElementById("buton").innerHTML = x;
+                }
+            </script>
+
+            <audio controls class="sound">
+                <source src="audio/yay.mp3" type="audio/mpeg">
+            </audio>
+			<br><br>
+			<a id="song"></a> 
+			<p id="video"></p> 
+
+        </div>
+
+    </div>
+	<div id="id01" class="modal" >
+	<form class="modal-content animate" onsubmit="check()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <img src="poze/olaf1.jpg" alt="olaf" width="180px"/>
+    </div>
+    <div class="container1">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button>Login</button><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Create a <a href="#" onclick="newaccount();">new account</a>!</span><br>
+	  
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+      <span class="psw">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <form class="modal-content" onsubmit="store()">
+    <div class="container ">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 style="color:#622569">Sign Up</h2>
+      <hr>
+      <label for="email"><b>Username</b></label>
+      <input type="text" placeholder="Enter Email" name="runame" required>
+
+      <label for="psw"><b>Parola</b></label>
+      <input type="password" placeholder="Enter Password" name="rpsw" id="rspw"	  required>
+
+      <label for="psw-repeat"><b>Rescrie parola</b></label>
+      <input type="password" placeholder="Repeat Password" name="rpsw-repeat" id="rspwr"  required><br>
+       <p id="raspuns"></p>
+      
+      <label for="gender"><b>Sex</b><br>
+	  <input type="radio" placeholder="Sex" name="gender" required> Feminin
+	  <input type="radio" placeholder="Sex" name="gender" name="gender" required> Masculin</label><br><br>
+	  
+	  <label for="oras"><b>Oras</b></label><br>
+	<select name="oras" placeholder="Oras de resedinta" required>
+	  <option value="volvo" >Bucuresti</option>
+	  <option value="saab" >Cluj</option>
+	  <option value="opel" >Braila</option>
+	</select><br><br>
+	  
+	  
+	  
+	  
+	  <label for="Varsta" style="color:#622569"><b>Varsta</b></label><br>
+	  <input type="range" id="rangeInput" name="Varsta" min="0" max="100" oninput="amount.value=rangeInput.value + ' (de) ani' " value="0">
+	<output id="amount" name="amount" for="rangeInput" style="color:#622569">0 ani</output><br><br>
+	  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" style="color:#622569"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:#622569">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button class="signupbtn"  id="sub">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+ <div id="id03" class="modal"  onsubmit="setari()">  
+  
+  <!-- Utilizatorul alege culoarea si fontul scrisului -->
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="poze/olaf3.jpg" alt="olaf surprins" width="200px">
+    </div>
+    <div class="container1">
+	      <label><b>Culoare background</b></label>
+       <input type="color" id="colorInput" value="#ffffff"><br><br>
+      <label><b>Font size
+	  <input type="range" id="fontInput"  min="0" max="40" oninput="amount.value=fontInput.value + ' px' " value="16">
+	<output id="amount" name="amount" for="rangeInput">0 px</output></b></label><br><br>
+        
+      <button type="submit">Aplica proprietatile</button>
+	  <button type="button" onclick="random_bg_color()">Culoare random</button>
+	  <button type="button" class="cancelbtn" onclick="stop_bg_color()">Vreau culoarea aceasta</button>
+	  <button type="button" class="cancelbtn" id="sterge">RESET</button> 
+     
+    </div>
+
+  </form>
+ </div>  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="login.js"></script>
+	<script src="contact.js"></script>
+	
+</body>
+
+</html>

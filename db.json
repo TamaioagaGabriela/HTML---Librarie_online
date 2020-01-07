@@ -1,0 +1,66 @@
+{
+  "books": [
+    {
+      "id": 3,
+      "titlu": "Hotul de carti",
+      "autor": "- Markus Zusak",
+      "url": "poze/best_3.jpg",
+      "pret": "34.25 lei"
+    },
+    {
+      "id": 4,
+      "titlu": "Podul de lut",
+      "autor": "- Markus Zusak",
+      "url": "poze/best_4.jpg",
+      "pret": "49.00 lei"
+    },
+    {
+      "id": 6,
+      "titlu": "Ceva in apa",
+      "autor": "- C Steadman",
+      "url": "poze/best_6.jpg",
+      "pret": "33.74 lei"
+    },
+    {
+      "id": 7,
+      "titlu": "Crede-ma cand mint",
+      "autor": "- J.P.Delaney",
+      "url": "poze/best_7.jpg",
+      "pret": "44.90 lei"
+    },
+    {
+      "titlu": "asd",
+      "autor": "asdasd",
+      "pret": "asdasd",
+      "url": "asda",
+      "id": 12
+    },
+    {
+      "titlu": "blabla",
+      "autor": "mara",
+      "pret": "45",
+      "url": "poze/best_3.jpg",
+      "id": 13
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "mara",
+      "pass": "Coco1234#"
+    },
+    {
+      "user": "mara.tama@yahoo.com",
+      "parola": "Mara1234#",
+      "id": 2
+    },
+    {
+      "user": "mara",
+      "parola": "Mara12345#",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

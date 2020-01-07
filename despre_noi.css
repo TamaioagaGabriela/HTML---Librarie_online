@@ -1,0 +1,56 @@
+
+h1 {
+	font-family: august;
+	color: #622569;	
+}
+
+body{
+		background-color:#b0aac0;
+		margin: 0;
+		font-family: "comic sans ms";
+		font-size: 16px; 
+		text-align: center;
+}
+	
+
+h1,h3 {
+	color: #622569;
+}
+
+.container {
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	text-align: center;
+	
+}
+
+ul {
+	text-align:center;
+	color:  #c94c4c;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+	width:70%;
+	vertical-align: middle;
+	border-style: double;
+	border-color: #ffef96;
+}
+
+.fb {
+	width: 27px;
+    height: 27px;
+	vertical-align: middle;
+	border: none;
+	
+}
+
+.forms {
+	 width: 80%;
+	 height: 475px;
+	 border: none; 
+}
+

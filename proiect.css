@@ -1,0 +1,121 @@
+ body {
+     background-color:#f9ccac;
+     margin: 0;
+     font-family: "comic sans ms";
+     font-size: 16px;
+     text-align: center;
+     display: block;
+}
+ table {
+     display:table;
+}
+ .transport{
+     margin-right: 15%;
+     margin-left: 15%;
+     text-align:center;
+     position: relative;
+}
+ .image {
+     display: block;
+     width:50%;
+     height: 285px;
+     margin-left:10%;
+}
+ .overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: #b8a9c9;
+     overflow: hidden;
+     width: 0;
+     height: 100%;
+     transition: .5s ease;
+    /* ca sa inceapa de unde incepe poza */
+}
+ .transport_jojo1:hover .overlay {
+     width: 100%;
+}
+ .text {
+     white-space: nowrap;
+     color: white;
+     font-size: 18px;
+     font-style: italic;
+     position: absolute;
+     overflow: hidden;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+ #citat {
+     white-space: nowrap;
+     color: white;
+     font-size: 18px;
+     font-style: italic;
+     position: absolute;
+     overflow: hidden;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+ .transport_jojo{
+     position: relative;
+     width: 70%;
+     margin-right: 15%;
+     margin-left: 15%;
+     text-align:center;
+     height:30%;
+}
+ .transport_jojo1{
+     position: relative;
+     width: 70%;
+     margin-right: 15%;
+     margin-left: 15%;
+     text-align:center;
+     height:25vw;
+}
+ .overlay_jojo {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+     background-color: #b8a9c9;
+}
+ .transport_jojo:hover .overlay_jojo {
+     opacity: 1;
+}
+ .image_jojo {
+     display: block;
+     width: 100%;
+     height: 100%;
+}
+ .titlu {
+     font-family: "comic sans ms";
+     font-size: 24px;
+     color: #50394c;
+}
+ .mini-meniu {
+     display: inline-grid;
+     grid-template-columns:1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     grid-column-gap: 120px;
+     grid-row-gap: 40px;
+     grid-auto-flow: row;
+}
+ .item {
+     place-self: center;
+     justify-self: stretch;
+}
+ .intro {
+     font-family: "comic sans ms";
+     margin-right: 15%;
+     margin-left: 15%;
+     font-size: 18px;
+     color:#50394c;
+}
+ 

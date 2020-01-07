@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarie</title>
+    <link rel="shortcut icon" type="image/jpg" href="poze/book.jpg" />
+
+    <link type="text/CSS" rel="stylesheet" href="bestseller.css" />
+    <link type="text/CSS" rel="stylesheet" href="media_query.css" />
+    <link type="text/CSS" rel="stylesheet" href="general.css" />
+	<link type="text/CSS" rel="stylesheet" href="login.css" />
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+
+</head>
+
+<body onload="fonload()">
+
+    <ul class="navigation">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="bestseller.html">Bestseller</a></li>
+        <!-- <li> -->
+            <!-- <div class="dropdown"> -->
+                <!-- <button class="dropbtn">Categorii</button> -->
+                <!-- <div class="dropdown-content"> -->
+                    <!-- <a href="libromani.html">Coltul Libromanilor </a> -->
+                    <!-- <a href="bestseller.html">Bestseller</a> -->
+                    <!-- <a href="carti_engleza.html">Carti in engleza</a> -->
+
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </li> -->
+        <li><a href="despre_noi.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li> 
+		<li><a href="#" onclick="document.getElementById('id03').style.display='block'">Setari</a></li>
+		<li><a href="#" onclick="document.getElementById('id04').style.display='block'">Adauga</a></li> 
+		<li><a href="#" onclick="document.getElementById('id05').style.display='block'">Sterge</a></li> 
+    </ul>
+
+    <br/>
+    <br/>
+
+   <!-- <button type="button" class="cancelbtn" id="sterge">RESET</button>  -->
+
+
+
+   <br><br>
+<a id="song"></a> 
+<p id="video"></p> 
+
+<div id="id01" class="modal" >
+  
+  <form class="modal-content animate" onsubmit="check()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <img src="poze/olaf1.jpg" alt="olaf" width="180px"/>
+    </div>
+    <div class="container1">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button>Login</button><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Create a <a href="#" onclick="newaccount();">new account</a>!</span><br>
+	  
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+      <span class="psw">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <form class="modal-content" onsubmit="store()">
+    <div class="container ">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 style="color:#622569">Sign Up</h2>
+      <hr>
+      <label for="email"><b>Username</b></label>
+      <input type="text" placeholder="Enter Email" name="runame" required>
+
+      <label for="psw"><b>Parola</b></label>
+      <input type="password" placeholder="Enter Password" name="rpsw" id="rspw"	  required>
+
+      <label for="psw-repeat"><b>Rescrie parola</b></label>
+      <input type="password" placeholder="Repeat Password" name="rpsw-repeat" id="rspwr"  required><br>
+       <p id="raspuns"></p>
+      
+      <label for="gender"><b>Sex</b><br>
+	  <input type="radio" placeholder="Sex" name="gender" required> Feminin
+	  <input type="radio" placeholder="Sex" name="gender" name="gender" required> Masculin</label><br><br>
+	  
+	  <label for="oras"><b>Oras</b></label><br>
+	<select name="oras" placeholder="Oras de resedinta" required>
+	  <option value="volvo" >Bucuresti</option>
+	  <option value="saab" >Cluj</option>
+	  <option value="opel" >Braila</option>
+	</select><br><br>
+	  
+	  
+	  
+	  
+	  <label for="Varsta" style="color:#622569"><b>Varsta</b></label><br>
+	  <input type="range" id="rangeInput" name="Varsta" min="0" max="100" oninput="amount.value=rangeInput.value + ' (de) ani' " value="0">
+	<output id="amount" name="amount" for="rangeInput" style="color:#622569">0 ani</output><br><br>
+	  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" style="color:#622569"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:#622569">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button class="signupbtn"  id="sub">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+ <div id="id03" class="modal"  onsubmit="setari()">  
+  
+  <!-- Utilizatorul alege culoarea si fontul scrisului -->
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="poze/olaf3.jpg" alt="olaf surprins" width="200px">
+    </div>
+    <div class="container1">
+	      <label><b>Culoare background</b></label>
+       <input type="color" id="colorInput" value="#ffffff"><br><br>
+      <label><b>Font size
+	  <input type="range" id="fontInput"  min="0" max="40" oninput="amount.value=fontInput.value + ' px' " value="16">
+	<output id="amount" name="amount" for="rangeInput">0 px</output></b></label><br><br>
+        
+      <button type="submit">Aplica proprietatile</button>
+	  <button type="button" onclick="random_bg_color()">Culoare random</button>
+	  <button type="button" class="cancelbtn" onclick="stop_bg_color()">Vreau culoarea aceasta</button>
+	  <button type="button" class="cancelbtn" id="sterge">RESET</button> 
+     
+    </div>
+
+  </form>
+ </div>  
+
+
+
+
+<div id="id04" class="modal" >
+  
+  <form class="modal-content animate" onsubmit="GetItems()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <img src="poze/olaf4.jpg" alt="olaf" width="180px"/>
+    </div>
+    <div class="container1">
+      <label for="uname_titlu"><b>Titlu carte:</b></label>
+      <input type="text" placeholder="Enter title" id="uname_titlu" required>
+      <label for="uname_autor"><b>Autor:</b></label>
+      <input type="text" placeholder="Enter author" id="uname_autor" required>
+	  <label for="uname_pret"><b>Pret lei:</b></label>
+      <input type="text" placeholder="Enter price" id="uname_pret" required>
+        
+      <button>Adauga!</button><label>
+	  <button type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+
+    </div>
+  </form>
+</div>
+
+<div id="id05" class="modal" >
+  
+  <form class="modal-content animate" onsubmit="deleteuser()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <img src="poze/olaf5.jpg" alt="olaf" width="180px"/>
+    </div>
+    <div class="container1">
+      <label for="uname_id"><b>Id carte:</b></label>
+      <input type="text" placeholder="Enter id" id="uname_id" required>
+        
+      <button>Sterge!</button><label>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="login.js"></script>
+</body>
+</html>
